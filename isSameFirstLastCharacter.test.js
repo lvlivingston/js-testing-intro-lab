@@ -10,9 +10,12 @@ test("it should return true when the first and last character are the same", () 
 });
 
 /* A test case for a string that does NOT have the same first and last 
-   character and is 4+ characters long
+character and is 4+ characters long
 */
-test("", () => {});
+test("it should return false when the first and last character are not the same", () => {
+   expect(isSameFirstLastCharacter("abbbbbc")).toBe(false);
+});
+
 
 // Edge Cases
 // A test case for a string with only 2 characters that are different
